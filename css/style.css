@@ -1,1 +1,127 @@
+/*
+Brandon Nguyen
+Brandon_Nguyen4@student.uml.edu
+*/
 
+body {
+    background-image: linear-gradient(to bottom right, #ffd966, #ffe699);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+  }
+  
+  /* Content container styles */
+  #content {
+    display: grid;
+    width: 100%;
+    height: 1000px;
+    padding: 3px;
+    grid-template-columns: 200px 10px 1fr 1fr 10px;
+    grid-template-rows: 40px 10px 1fr 1fr 10px;
+  }
+  
+  /*table content styles */
+  #table-content {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    overflow: scroll;
+    width: 82vw;
+  }
+  
+  /* Form styles */
+  form {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-start: span 5;
+    background: #ffd966;
+    color: white;
+    float: left;
+  }
+  
+  /* header styles */
+  header {
+    font-size: 30px;
+    padding-bottom: 2px;
+    background: #ffe699;
+    grid-column-start: 1;
+    grid-column-end: span 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+  }
+  
+  /* h4 element styles */
+  h4 {
+    color: #ffe699;
+    text-align: center;
+  }
+  
+  /* table styles */
+  table {
+    background: #ffe699;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  /* table cells and rows styles */
+  td, tr {
+    border: 1px solid #cc9900;
+    padding: 2px;
+    text-align: center;
+  }
+  
+  /* first cell in the first row styles */
+  tr:first-child td:first-child {
+    background: black;
+    border: 2px solid #ffcccc;
+  }
+  
+  /* first cell in the first row */
+  td:first-child {
+    background: black;
+    color: #ffcc00;
+    border-top: 2px solid #cc9900;
+  }
+  
+  /* first row cells, excluding the first cell styles */
+  tr:first-child td {
+    background: black;
+    color: #ffcc00;
+    border-right: 2px solid #cc9900;
+  }
+  
+  /* last cell of the first row style */
+  tr:first-child td:last-child {
+    border-right: 1px solid orange;
+  }
+  
+  /* Slider container styles */
+  .background-slider {
+    margin: 2px 0px 0px 42px;
+  }
+  
+  /* Slider styles */
+  #minCSlider,
+  #maxCSlider,
+  #minRSlider,
+  #maxRSlider {
+    width: 179px;
+    height: 20px;
+    border: none;
+    background: black no-repeat;
+  }
+  
+  /* Slider handle styles */
+  #minCSlider .ui-slider-handle,
+  #maxCSlider .ui-slider-handle,
+  #minRSlider .ui-slider-handle,
+  #maxRSlider .ui-slider-handle {
+    width: 14px;
+    height: 20px;
+    top: 0px;
+    background: #00d351 no-repeat;
+  }
+  
